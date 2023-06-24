@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/icon5_8"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="313dp"
+        android:layout_marginBottom="529dp"
+        android:src="@drawable/moneta5" />
+
+    <ImageView
+        android:id="@+id/icon1_7"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="618dp"
+        android:layout_marginEnd="119dp"
+        android:src="@drawable/moneta1" />
+
+    <ImageView
+        android:id="@+id/icon2_6"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="214dp"
+        android:src="@drawable/moneta2" />
+
+    <ImageView
+        android:id="@+id/icon5_6"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="314dp"
+        android:layout_marginBottom="47dp"
+        android:src="@drawable/moneta5" />
+
+    <ImageView
+        android:id="@+id/icon5_5"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/moneta5" />
+
+    <ImageView
+        android:id="@+id/icon2_5"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="397dp"
+        android:layout_marginEnd="112dp"
+        android:src="@drawable/moneta2" />
+
+    <ImageView
+        android:id="@+id/icon1_6"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="225dp"
+        android:src="@drawable/moneta1" />
+
+    <ImageView
+        android:id="@+id/icon2_4"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="502dp"
+        android:layout_marginEnd="330dp"
+        android:src="@drawable/moneta2" />
+
+    <ImageView
+        android:id="@+id/icon1_5"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="506dp"
+        android:layout_marginEnd="212dp"
+        android:src="@drawable/moneta1" />
+
+    <ImageView
+        android:id="@+id/icon1_2"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="379dp"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/moneta1" />
+
+    <ImageView
+        android:id="@+id/icon1_4"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="477dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/moneta1" />
+
+    <ImageView
+        android:id="@+id/icon5_4"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="313dp"
+        android:src="@drawable/moneta5" />
+
+    <ImageView
+        android:id="@+id/icon2_7"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="116dp"
+        android:src="@drawable/moneta2" />
+
+    <ImageView
+        android:id="@+id/icon1_8"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="209dp"
+        android:src="@drawable/moneta1" />
+
+    <ImageView
+        android:id="@+id/icon5_7"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="223dp"
+        android:layout_marginBottom="366dp"
+        android:src="@drawable/moneta5" />
+
+    <ImageView
+        android:id="@+id/icon5_1"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="469dp"
+        android:src="@drawable/moneta5" />
+
+    <ImageView
+        android:id="@+id/icon5_2"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="312dp"
+        android:layout_marginBottom="620dp"
+        android:src="@drawable/moneta5" />
+
+    <ImageView
+        android:id="@+id/icon1_1"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginBottom="151dp"
+        android:src="@drawable/moneta1" />
+
+    <ImageView
+        android:id="@+id/icon2_1"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="326dp"
+        android:layout_marginBottom="428dp"
+        android:src="@drawable/moneta2" />
+
+    <ImageView
+        android:id="@+id/icon2_2"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="603dp"
+        android:src="@drawable/moneta2" />
+
+    <ImageView
+        android:id="@+id/icon1_3"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="116dp"
+        android:src="@drawable/moneta1" />
+
+    <ImageView
+        android:id="@+id/icon2_3"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="215dp"
+        android:src="@drawable/moneta2" />
+
+    <ImageView
+        android:id="@+id/icon2_8"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="302dp"
+        android:layout_marginEnd="320dp"
+        android:src="@drawable/moneta2" />
+
+    <ImageView
+        android:id="@+id/icon5_3"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="315dp"
+        android:src="@drawable/moneta5" />
+
+    <TextView
+        android:id="@+id/counterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:text="Czas: 60 s"
+        android:textSize="18sp" />
+
+</RelativeLayout>

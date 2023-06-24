@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_new_game"
+        android:title="Nowa gra" />
+    <item
+        android:id="@+id/menu_high_scores"
+        android:title="Najlepsze wyniki" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Wyloguj" />
+    <item
+        android:id="@+id/menu_game_description"
+        android:title="Opis gry" />
+    <item
+        android:id="@+id/menu_author"
+        android:title="O Autorze" />
+</menu>
