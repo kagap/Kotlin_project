@@ -12,10 +12,13 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var btnLogout: Button
     private lateinit var btnGameDescription: Button
     private lateinit var btnAuthorInfo: Button
+    private lateinit var username: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        username = intent.getStringExtra("username") ?: ""
 
         btnNewGame = findViewById(R.id.btnNewGame)
         btnBestScores = findViewById(R.id.btnBestScores)
@@ -25,14 +28,14 @@ class HomeActivity : AppCompatActivity() {
 
        btnNewGame.setOnClickListener {
            val intent = Intent(this, Game::class.java)
+           intent.putExtra("username", username)
            startActivity(intent)
         }
 
-       /*btnBestScores.setOnClickListener {
-                  val intent = Intent(this, LeaderboardActivity::class.java)
-                  startActivity(intent)
-               }
-*/
+       btnBestScores.setOnClickListener {
+           val intent = Intent(this, LeaderboardActivity::class.java)
+           startActivity(intent)
+       }
         btnLogout.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

@@ -9,7 +9,7 @@ object DatabaseContract {
         const val COLUMN_USERNAME = "username"
         const val COLUMN_RESULT = "result"
         const val COLUMN_END_TIME="endTime"
-        const val COLUMN_COUNTDOWN="countdown "
+        const val COLUMN_COUNTDOWN = "countdown"
 
         const val SQL_CREATE_TABLE =
             "CREATE TABLE $TABLE_NAME (" +

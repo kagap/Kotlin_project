@@ -19,14 +19,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var passwordEditText: EditText
     private lateinit var loginButton: Button
     private lateinit var registerButton: Button
-    private lateinit var loggedInUsername: String
-
-    private val registeredUsers = mutableListOf<User>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        databaseHelper = DatabaseHelper(this)
 
         usernameEditText = findViewById(R.id.usernameEditText)
         passwordEditText = findViewById(R.id.passwordEditText)
@@ -84,20 +82,42 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun register(username: String, password: String): Boolean {
-        val registered = registeredUsers.any { it.username == username }
-        if (registered) {
+        val db = databaseHelper.writableDatabase
+        val existing = db.query(
+            UserContract.UserEntry.TABLE_NAME,
+            arrayOf(UserContract.UserEntry.COLUMN_USERNAME),
+            "${UserContract.UserEntry.COLUMN_USERNAME} = ?",
+            arrayOf(username),
+            null, null, null
+        )
+        val alreadyRegistered = existing.moveToFirst()
+        existing.close()
+        if (alreadyRegistered) {
+            db.close()
             return false
         }
 
-        val newUser = User(username, password)
-        registeredUsers.add(newUser)
+        val values = ContentValues().apply {
+            put(UserContract.UserEntry.COLUMN_USERNAME, username)
+            put(UserContract.UserEntry.COLUMN_PASSWORD, password)
+        }
+        db.insert(UserContract.UserEntry.TABLE_NAME, null, values)
+        db.close()
         return true
     }
 
     private fun login(username: String, password: String): Boolean {
-        val user = registeredUsers.find { it.username == username && it.password == password }
-        return user != null
+        val db = databaseHelper.readableDatabase
+        val cursor = db.query(
+            UserContract.UserEntry.TABLE_NAME,
+            arrayOf(UserContract.UserEntry.COLUMN_USERNAME),
+            "${UserContract.UserEntry.COLUMN_USERNAME} = ? AND ${UserContract.UserEntry.COLUMN_PASSWORD} = ?",
+            arrayOf(username, password),
+            null, null, null
+        )
+        val found = cursor.moveToFirst()
+        cursor.close()
+        db.close()
+        return found
     }
-
-
 }

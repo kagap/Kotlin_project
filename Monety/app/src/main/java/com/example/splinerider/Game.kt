@@ -56,10 +56,12 @@ class Game : AppCompatActivity(), View.OnTouchListener {
     private var counter: Int = 0
 
     private lateinit var databaseHelper: DatabaseHelper
+    private lateinit var username: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.game)
+        username = intent.getStringExtra("username") ?: "test"
         timerText = findViewById(R.id.timerText)
         icon1_7 = findViewById(R.id.icon1_7)
         icon2_6 = findViewById(R.id.icon2_6)
@@ -242,7 +244,6 @@ class Game : AppCompatActivity(), View.OnTouchListener {
     }
 
     private fun saveResultToDatabase() {
-        val username = "test"//loggedInUsername// Przykładowa nazwa użytkownika
         val result = counter
         val endTime = Date() // Pobierz aktualną datę i czas
         val countdown = timeRemainingMillis / 1000 // Przekształć wartość timeRemainingMillis na sekundy
